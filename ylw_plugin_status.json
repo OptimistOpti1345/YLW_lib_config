@@ -1,0 +1,18 @@
+{
+    "my_custom_dox_plugin": {
+        "is_active": true,
+        "message": "Плагин DoxGram функционирует нормально."
+    },
+    "dinorunner": {
+        "is_active": true,
+        "message": "Игра активна."
+    },
+    "temp_mail": {
+        "is_active": true,
+        "message": "Временная почта работает."
+    },
+    "default": {
+        "is_active": true,
+        "message": "Плагин временно отключен администратором."
+    }
+}
