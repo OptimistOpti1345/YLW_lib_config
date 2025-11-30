@@ -1,18 +1,11 @@
 {
-    "my_custom_dox_plugin": {
-        "is_active": true,
-        "message": "Плагин DoxGram функционирует нормально."
-    },
-    "dinorunner": {
-        "is_active": true,
-        "message": "Игра активна."
-    },
-    "temp_mail": {
-        "is_active": true,
-        "message": "Временная почта работает."
-    },
-    "default": {
-        "is_active": true,
-        "message": "Плагин временно отключен администратором."
+  "version": "1.0",
+  "plugins": [
+    {
+      "id": "test_ylw",
+      "name": "YLW Test Plugin",
+      "new_version": "2.0",
+      "download_url": "https://raw.githubusercontent.com/optimistopti1345/YLW_lib/main/plugins/test_ylw.plugin"
     }
+  ]
 }
