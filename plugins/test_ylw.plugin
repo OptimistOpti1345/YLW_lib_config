@@ -1,0 +1,23 @@
+# -*- coding: utf-8 -*-
+from base_plugin import BasePlugin
+from ui.bulletin import BulletinHelper
+from android_utils import run_on_ui_thread
+
+__id__ = "test_ylw"
+__name__ = "YLW Test Plugin"
+__description__ = "Тестовый плагин для проверки автообновлений"
+__author__ = "optimistopti1345"
+__version__ = "2.0"        # ← НОВАЯ ВЕРСИЯ
+__icon__ = "msg_info"
+
+class TestYLW(BasePlugin):
+    def on_plugin_load(self):
+        run_on_ui_thread(lambda: BulletinHelper.show_success("ОБНОВЛЕНО ДО v2.0! YLW Lib работает!"))
+
+    def create_settings(self):
+        return [
+            Header("YLW Test Plugin"),
+            Text("Версия: 2.0"),
+            Text("Поздравляю! Автообновление работает!"),
+            Text("Ты теперь бог ExteraGram", accent=True)
+        ]
